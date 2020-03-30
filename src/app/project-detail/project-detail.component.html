@@ -5,7 +5,7 @@
       </div>
       <div class="col-xl">
           <h6 class="project-header">{{project.title}}</h6>
-          <p class="project-description">{{project.description}}</p>
+          <p [innerHTML]=" project.description | linkify" class="project-description"></p>
       </div>
       <div class="col-xl">
         

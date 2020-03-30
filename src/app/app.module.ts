@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { NgxLinkifyjsModule } from 'ngx-linkifyjs';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -17,6 +18,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     NgxPaginationModule,
+    NgxLinkifyjsModule.forRoot(),
     NgbModule, 
     AppRoutingModule,
     HttpClientModule,
