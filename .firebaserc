@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "goalz-ff327"
+  },
+  "targets": {
+    "goalz-ff327": {
+      "hosting": {
+        "personal-site": [
+          "goalz-ff327"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+      <div class="col-xl">
+        
+      </div>
+      <div class="col-xl">
+        <h3 class="first-header">Cool Projects</h3>
+        <a href="https://ambrose-blog-1.web.app/" class="my-name-link" >Ambrose Byamugisha</a>
+      </div>
+      <div class="col-xl">
+        
+      </div>
+    </div>
+</div>
+<div class="container" *ngFor="let project of projects | paginate: { itemsPerPage: 5, currentPage: p }">
+    <div class="row">
+      <div class="col-xl">
+        
+      </div>
+      <div class="col-xl">
+        <a routerLink="/detail/{{project.id}}">
+          <h6 class="project-header">{{project.title}}</h6>
+        </a>
+        <p class="project-description">{{project.description | slice:0:100}} ...</p>
+        
+      </div>
+      <div class="col-xl">
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-xl">
+        
+      </div>
+      <div class="col-xl">
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+      </div>
+      <div class="col-xl">
+        
+      </div>
+    </div>
+</div>
